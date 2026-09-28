@@ -53,7 +53,7 @@ public class ShortLister
                         word = word.replace("“", "");
                         word = word.replace("”", "");
                         word = word.replace("’", "");
-                        word = word.replace("-", "");
+                        word = word.replace("—", "");
 
 
                         // Adds non-empty Strings that pass the filter to the array list

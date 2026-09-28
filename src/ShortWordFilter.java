@@ -4,15 +4,8 @@ public class ShortWordFilter implements Filter
     public boolean accept(Object x)
     {
         final int LEN_LIMIT = 5;
-
-        boolean isStringOfValidLength = false;
         String s = (String) x;
 
-        if (s.length() < LEN_LIMIT)
-        {
-            isStringOfValidLength = true;
-        }
-
-        return isStringOfValidLength;
+        return (s.length() < LEN_LIMIT);
     }
 }
